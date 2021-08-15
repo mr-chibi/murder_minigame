@@ -1,6 +1,8 @@
 <h2>Mr_Chibi's Murder MiniGame! Multiplayer Friendly!</h2>
 <p>This datapack was created for server owners to have something new and fun to experience with there community! Players can either be "innocent", "murderer", or "detective"! They must kill the murderers in order to win the minigame!</p>
 
+<p>Build your own maps using my map creator assets to provide your community with something new and inspiring!</p>
+
 <h2>What Unique Features does pack offer?</h2>
 <ul>
   <li>Roles</li>
