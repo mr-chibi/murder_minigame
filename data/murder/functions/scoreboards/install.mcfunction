@@ -32,6 +32,8 @@ scoreboard objectives add setup_map trigger
 scoreboard objectives add murder_map trigger
 
 #
+scoreboard objectives add murder_tp dummy
+scoreboard objectives add murder_role dummy
 scoreboard objectives add murder_round dummy
 scoreboard players set killed_innocents murder_round 0
 scoreboard players set killed_murderers murder_round 0

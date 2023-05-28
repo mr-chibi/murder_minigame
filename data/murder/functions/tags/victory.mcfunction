@@ -32,8 +32,8 @@ execute if score role_victory murder_round matches 1 run scoreboard players set 
 
 #
 execute if score role_victory murder_round matches 1 run scoreboard players reset @a[tag=join_murder] murder_role
-execute if score role_victory murder_round matches 1 run team leave @a[tag=join_murder,team=innocents]
-execute if score role_victory murder_round matches 1 run team leave @a[tag=join_murder,team=murderers]
+execute if score role_victory murder_round matches 1 run team leave @a[team=innocents]
+execute if score role_victory murder_round matches 1 run team leave @a[team=murderer]
 
 #
 execute if score role_victory murder_round matches 1 run clear @a[tag=join_murder]
@@ -91,8 +91,8 @@ execute if score role_victory murder_round matches 2 run scoreboard players set 
 
 #
 execute if score role_victory murder_round matches 2 run scoreboard players reset @a[tag=join_murder] murder_role
-execute if score role_victory murder_round matches 2 run team leave @a[tag=join_murder,team=innocents]
-execute if score role_victory murder_round matches 2 run team leave @a[tag=join_murder,team=murderers]
+execute if score role_victory murder_round matches 2 run team leave @a[team=innocents]
+execute if score role_victory murder_round matches 2 run team leave @a[team=murderer]
 
 #
 execute if score role_victory murder_round matches 2 run clear @a[tag=join_murder]

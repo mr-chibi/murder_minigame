@@ -14,12 +14,8 @@ scoreboard players set round_end murder_timer 2
 scoreboard players set stop murder_timer 60
 scoreboard players set start murder_timer 0
 
-# Grant player a random role:
-execute if score murder_map murder_minigame matches 1 run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @s unless score @s murder_tp matches 0 run execute as @a[tag=join_murder] at @r run tp @s @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1]
-execute if score murder_map murder_minigame matches 1 run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @s unless score @s murder_tp matches 0 run execute as @a[tag=join_murder] at @r run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @r if score murder_players murder_minigame matches 2.. run execute as @p[tag=join_murder] at @s run scoreboard players set @s murder_role 1
-execute if score murder_map murder_minigame matches 1 run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @s unless score @s murder_tp matches 0 run execute as @a[tag=join_murder] at @r run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @r if score murder_players murder_minigame matches 2.. run execute as @p[tag=join_murder] at @s run scoreboard players set @s murder_role 2
-execute if score murder_map murder_minigame matches 1 run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @s unless score @s murder_tp matches 0 run execute as @a[tag=join_murder] at @r run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @r if score murder_players murder_minigame matches 3.. run execute as @p[tag=join_murder] at @s run scoreboard players set @s murder_role 3
-execute if score murder_map murder_minigame matches 1 run execute as @e[type=minecraft:armor_stand,tag=murder_map_1,sort=random,limit=1] at @s unless score @s murder_tp matches 0 run scoreboard players set @s murder_map 0
+#
+function murder:maps
 
 # Reset Teams:
 scoreboard players set innocent_players murder_minigame 0

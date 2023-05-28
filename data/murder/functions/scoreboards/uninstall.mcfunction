@@ -13,6 +13,8 @@ scoreboard objectives remove setup_map
 scoreboard objectives remove murder_map
 
 #
+scoreboard objectives remove murder_tp
+scoreboard objectives remove murder_role
 scoreboard objectives remove murder_round
 
 # Teams:
